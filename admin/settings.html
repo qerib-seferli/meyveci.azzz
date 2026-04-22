@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>İstifadəçilər | Admin</title>
- 
+  <title>Ayarlar | Admin</title>
+
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link rel="stylesheet" href="../assets/css/admin.css" />
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -20,21 +20,19 @@
   <div class="admin-shell">
     <div id="adminSidebar"></div>
     <main class="admin-main">
-      <div class="admin-topbar"><h1>İstifadəçilər</h1></div>
+      <div class="admin-topbar"><h1>Ayarlar</h1></div>
+
       <section class="admin-card">
         <div class="table-wrap">
           <table class="admin-table">
             <thead>
               <tr>
-                <th>Ad soyad</th>
-                <th>Email</th>
-                <th>Telefon</th>
-                <th>Rol</th>
-                <th>Aktiv</th>
-                <th>Əməliyyat</th>
+                <th>Açar</th>
+                <th>Dəyər (JSON)</th>
+                <th>Təsvir</th>
               </tr>
             </thead>
-            <tbody id="usersTableBody"></tbody>
+            <tbody id="settingsTableBody"></tbody>
           </table>
         </div>
       </section>
@@ -46,6 +44,6 @@
   <script src="../assets/js/guards.js"></script>
   <script src="../assets/js/admin-layout.js"></script>
   <script src="../assets/js/admin-api.js"></script>
-  <script src="../assets/js/admin-users.js"></script>
+  <script src="../assets/js/admin-settings.js"></script>
 </body>
 </html>
