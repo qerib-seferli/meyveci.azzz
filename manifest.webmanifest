@@ -1,0 +1,28 @@
+{
+  "name": "Meyvəçi.az",
+  "short_name": "Meyvəçi",
+  "description": "Premium grocery marketplace və delivery platforması",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f7fff9",
+  "theme_color": "#16a34a",
+  "categories": ["shopping", "food", "business"],
+  "lang": "az",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "./assets/img/logo/Meyveci-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/img/logo/Meyveci-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

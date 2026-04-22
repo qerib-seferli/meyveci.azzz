@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Meyvəçi.az | Təzə məhsullar qapına qədər</title>
+  <meta name="description" content="Meyvəçi.az premium grocery marketplace və delivery platformasıdır. Təzə məhsulları sürətli sifariş et." />
+  <meta name="keywords" content="meyvə, tərəvəz, market, delivery, grocery, Bakı, online market, Meyvəçi.az" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#16a34a" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Meyvəçi.az" />
+  <meta name="application-name" content="Meyvəçi.az" />
+
+  <link rel="canonical" href="https://meyveci.az/" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="./assets/img/logo/Meyveci-logo.png" />
+  <link rel="icon" type="image/png" href="./assets/img/logo/Meyveci-logo.png" />
+
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/index.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <div id="header"></div>
+
+  <main class="home-shell">
+    <section class="hero-card card-xl">
+      <div class="hero-copy">
+        <span class="chip">Premium grocery marketplace</span>
+        <h1>Təzə məhsullar qapına qədər, rahat və sürətli.</h1>
+        <p>
+          Meyvəçi.az ilə meyvə, tərəvəz və gündəlik bazarlığını səliqəli interfeys,
+          canlı izləmə və rahat sifariş axını ilə idarə et.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="./catalog.html">Kataloqa bax</a>
+          <a class="btn btn-soft" href="./search.html">Axtarış et</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img src="./assets/img/logo/Cilek-logo.png" alt="Meyvəçi.az" />
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div>
+          <h2>Niyə Meyvəçi.az?</h2>
+          <p class="muted">Sadə, sürətli, yorucu olmayan təcrübə.</p>
+        </div>
+      </div>
+
+      <div class="quick-grid">
+        <article class="quick-item">
+          <h3>Sürətli çatdırılma</h3>
+          <p>Tracking və status pillələri ilə sifarişin harada olduğunu rahat gör.</p>
+        </article>
+
+        <article class="quick-item">
+          <h3>Canlı chat</h3>
+          <p>İstifadəçi, admin və kuryer üçün birləşmiş mesaj sistemi.</p>
+        </article>
+
+        <article class="quick-item">
+          <h3>Təhlükəsiz hesab</h3>
+          <p>Role-based giriş, RLS və ayrılmış idarə paneli.</p>
+        </article>
+
+        <article class="quick-item">
+          <h3>Premium görünüş</h3>
+          <p>Mobil və desktop üçün balanslı, təmiz və modern dizayn.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div>
+          <h2>Seçilmiş məhsullar</h2>
+          <p class="muted">Admin tərəfindən seçilən məhsullar.</p>
+        </div>
+
+        <a class="btn btn-soft" href="./catalog.html">Hamısına bax</a>
+      </div>
+
+      <div id="featuredProducts" class="featured-grid"></div>
+    </section>
+  </main>
+
+  <div id="bottomNav"></div>
+
+  <script src="./assets/js/supabase.js"></script>
+  <script src="./assets/js/components.js"></script>
+  <script src="./assets/js/auth.js"></script>
+  <script src="./assets/js/chat-api.js"></script>
+  <script src="./assets/js/user-api.js"></script>
+  <script src="./assets/js/ui-feedback.js"></script>
+  <script src="./assets/js/header-live.js"></script>
+  <script src="./assets/js/pwa.js"></script>
+  <script src="./assets/js/seo.js"></script>
+  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/index.js"></script>
+
+  <script>
+    setSeoMeta({
+      title: "Meyvəçi.az | Təzə məhsullar qapına qədər",
+      description: "Meyvəçi.az premium grocery marketplace və delivery platformasıdır.",
+      image: `${window.location.origin}/assets/img/logo/Meyveci-logo.png`,
+      url: window.location.href,
+      type: "website"
+    });
+
+    setJsonLd({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Meyvəçi.az",
+      "url": window.location.origin,
+      "logo": `${window.location.origin}/assets/img/logo/Meyveci-logo.png`,
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "telephone": "+994993909595",
+          "email": "info@meyveci.az",
+          "areaServed": "AZ"
+        }
+      ]
+    });
+  </script>
+</body>
+</html>
